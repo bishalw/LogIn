@@ -20,6 +20,7 @@
 		581997AB23E8EC96005CB7EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581997AA23E8EC96005CB7EC /* LoginViewController.swift */; };
 		581997AD23E8ECB4005CB7EC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581997AC23E8ECB4005CB7EC /* HomeViewController.swift */; };
 		581997B023E8F7F4005CB7EC /* StoryBoardInitializeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581997AF23E8F7F4005CB7EC /* StoryBoardInitializeable.swift */; };
+		58C7E59723EA0EE500076DFF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7E59623EA0EE500076DFF /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		581997AA23E8EC96005CB7EC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		581997AC23E8ECB4005CB7EC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		581997AF23E8F7F4005CB7EC /* StoryBoardInitializeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardInitializeable.swift; sourceTree = "<group>"; };
+		58C7E59623EA0EE500076DFF /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		5819977423E8EB7D005CB7EC /* IosLogin */ = {
 			isa = PBXGroup;
 			children = (
+				58C7E59523EA0EB000076DFF /* Helpers */,
 				5819977523E8EB7D005CB7EC /* AppDelegate.swift */,
 				5819977723E8EB7D005CB7EC /* SceneDelegate.swift */,
 				581997AE23E8ECD0005CB7EC /* ViewControllers */,
@@ -149,6 +152,14 @@
 				581997AC23E8ECB4005CB7EC /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		58C7E59523EA0EB000076DFF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				58C7E59623EA0EE500076DFF /* Utilities.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				5819977623E8EB7D005CB7EC /* AppDelegate.swift in Sources */,
 				5819977823E8EB7D005CB7EC /* SceneDelegate.swift in Sources */,
 				581997AD23E8ECB4005CB7EC /* HomeViewController.swift in Sources */,
+				58C7E59723EA0EE500076DFF /* Utilities.swift in Sources */,
 				581997A923E8EC84005CB7EC /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

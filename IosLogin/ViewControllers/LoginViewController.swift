@@ -9,12 +9,32 @@
 import UIKit
 
 class LoginViewController: UIViewController, StoryBoardInitializeable {
-
+    
+    @IBOutlet weak var firstNameTextField: UITextField!
+    
+    @IBOutlet weak var lastNameTextField: UITextField!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
+    @IBOutlet weak var errorLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUpElements()
+        
         // Do any additional setup after loading the view.
     }
+    func setUpElements(){
+        errorLabel.alpha = 0
+           
+           Utilities.styleTextField(firstNameTextField)
+           
+           Utilities.styleTextField(lastNameTextField)
+            Utilities.styleFilledButton(loginButton)
+           
+
+       }
     // Login Pressed Takes you to HomeViewController
     @IBAction func logInButtonPressed(){
         let vc = HomeViewController.initFromStoryBoard()

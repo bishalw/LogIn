@@ -50,6 +50,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="eHg-YT-Yyp"/>
+                    <connections>
+                        <outlet property="login" destination="xR9-Nu-ues" id="fgk-TJ-fFN"/>
+                        <outlet property="signUp" destination="V82-ZJ-q0M" id="BzB-iD-8Io"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,7 +110,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STQ-Se-mxq">
                                         <rect key="frame" x="0.0" y="180" width="334" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -124,6 +128,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jep-Jd-YNR"/>
                     </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="STQ-Se-mxq" id="788-Z1-0HN"/>
+                        <outlet property="firstNameTextField" destination="GFU-RU-6jk" id="ghD-Kq-QE5"/>
+                        <outlet property="lastNameTextField" destination="lwU-pK-ZNg" id="0uX-ns-03t"/>
+                        <outlet property="loginButton" destination="wiD-xY-ERN" id="DxL-CC-bGw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6jA-Wu-Gci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -200,7 +210,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlG-ff-Dlt">
                                         <rect key="frame" x="0.0" y="300" width="334" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -222,8 +232,11 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="paN-ZQ-3hu" id="pBz-bI-SFu"/>
+                        <outlet property="errorLabel" destination="dlG-ff-Dlt" id="YuP-9g-Dw2"/>
                         <outlet property="firstNameTextField" destination="HYj-6Q-kaD" id="kZJ-jk-v1b"/>
                         <outlet property="lastNameTextField" destination="NwP-gC-wTB" id="CCd-3P-vb6"/>
+                        <outlet property="passwordTextField" destination="9a8-d1-ZNr" id="DGX-oY-sqy"/>
+                        <outlet property="signUpButton" destination="NJR-lv-3Xa" id="lCQ-uv-BIP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAK-bg-yiI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

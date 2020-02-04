@@ -18,13 +18,36 @@ class SignUpViewController: UIViewController, StoryBoardInitializeable {
     
     @IBOutlet weak var emailTextField: UITextField!
     
+  
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var signUpButton: UIButton!
+    
+  
+    @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        setUpElements()
      
 
         // Do any additional setup after loading the view.
+    }
+    
+    func setUpElements(){
+        errorLabel.alpha = 0
+        
+        Utilities.styleTextField(firstNameTextField)
+        
+        Utilities.styleTextField(lastNameTextField)
+        
+        Utilities.styleTextField(emailTextField)
+        Utilities.styleTextField(passwordTextField)
+        Utilities.styleFilledButton(signUpButton)
+        
+
     }
     // SignUp button pressed takees you to LoginViewController
     @IBAction func  signUpButtonPressed() {

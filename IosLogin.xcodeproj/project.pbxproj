@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,7 @@
 		581997B023E8F7F4005CB7EC /* StoryBoardInitializeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581997AF23E8F7F4005CB7EC /* StoryBoardInitializeable.swift */; };
 		58C7E59723EA0EE500076DFF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7E59623EA0EE500076DFF /* Utilities.swift */; };
 		58C7E59923EA339100076DFF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58C7E59823EA339100076DFF /* GoogleService-Info.plist */; };
+		58E20E6623EA512C0077CCA0 /* loginVid.mov in Resources */ = {isa = PBXBuildFile; fileRef = 58E20E6523EA512B0077CCA0 /* loginVid.mov */; };
 		810BA8EE11518D6194127C75 /* Pods_IosLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6610B26368C82D8C574C60C8 /* Pods_IosLoginTests.framework */; };
 		C40B52109049C30105B9C848 /* Pods_IosLogin_IosLoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6A762FDF139DEB04A2CFBC /* Pods_IosLogin_IosLoginUITests.framework */; };
 		FAF8D422DD11C5F00225A3A9 /* Pods_IosLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F26540CB029669A4E1CFBD /* Pods_IosLogin.framework */; };
@@ -67,6 +68,7 @@
 		581997AF23E8F7F4005CB7EC /* StoryBoardInitializeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardInitializeable.swift; sourceTree = "<group>"; };
 		58C7E59623EA0EE500076DFF /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		58C7E59823EA339100076DFF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		58E20E6523EA512B0077CCA0 /* loginVid.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = loginVid.mov; sourceTree = "<group>"; };
 		6610B26368C82D8C574C60C8 /* Pods_IosLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C76AAB6AEFD1B732D9713A /* Pods-IosLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosLogin.debug.xcconfig"; path = "Target Support Files/Pods-IosLogin/Pods-IosLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		8F6A762FDF139DEB04A2CFBC /* Pods_IosLogin_IosLoginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosLogin_IosLoginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +137,7 @@
 				5819977723E8EB7D005CB7EC /* SceneDelegate.swift */,
 				581997AE23E8ECD0005CB7EC /* ViewControllers */,
 				5819977923E8EB7D005CB7EC /* ViewController.swift */,
+				58E20E6423EA51050077CCA0 /* Media */,
 				5819977B23E8EB7D005CB7EC /* Main.storyboard */,
 				5819978123E8EB80005CB7EC /* Assets.xcassets */,
 				5819978323E8EB80005CB7EC /* LaunchScreen.storyboard */,
@@ -182,6 +185,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		58E20E6423EA51050077CCA0 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				58E20E6523EA512B0077CCA0 /* loginVid.mov */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
 		7EC6860763D72AAEF9FEB9C9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,7 +203,6 @@
 				ABE14D865E030335EA6D5C11 /* Pods-IosLoginTests.debug.xcconfig */,
 				CE3626A73A52F7B27E155120 /* Pods-IosLoginTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -315,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E20E6623EA512C0077CCA0 /* loginVid.mov in Resources */,
 				5819978523E8EB80005CB7EC /* LaunchScreen.storyboard in Resources */,
 				58C7E59923EA339100076DFF /* GoogleService-Info.plist in Resources */,
 				5819978223E8EB80005CB7EC /* Assets.xcassets in Resources */,

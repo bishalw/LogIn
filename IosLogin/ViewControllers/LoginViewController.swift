@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
+import FirebaseFirestore
 
 class LoginViewController: UIViewController, StoryBoardInitializeable {
     
-    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     
-    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var loginButton: UIButton!
     
@@ -28,19 +31,40 @@ class LoginViewController: UIViewController, StoryBoardInitializeable {
     func setUpElements(){
         errorLabel.alpha = 0
            
-           Utilities.styleTextField(firstNameTextField)
+           Utilities.styleTextField(emailTextField)
            
-           Utilities.styleTextField(lastNameTextField)
+           Utilities.styleTextField(passwordTextField)
             Utilities.styleFilledButton(loginButton)
            
 
        }
+    
+    
     // Login Pressed Takes you to HomeViewController
     @IBAction func logInButtonPressed(){
-        let vc = HomeViewController.initFromStoryBoard()
+        let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        
+       
+        
+        Auth.auth().signIn(withEmail: email, password: password){
+            (result, error) in
+            
+            if error != nil {
+                self.errorLabel.text = error!.localizedDescription
+                self.errorLabel.alpha = 1;
+            }else{
+                 let vc = HomeViewController.initFromStoryBoard()
+                 self.navigationController?.pushViewController(vc, animated: true)
+                
+            }
+            
+        }
+        
+        
                
-               
-        self.navigationController?.pushViewController(vc, animated: true)
+       
     }
 
     /*

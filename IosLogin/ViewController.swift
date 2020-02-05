@@ -23,11 +23,11 @@ class ViewController: UIViewController {
    
     func setUpElements(){
                 Utilities.styleFilledButton(signUp)
-                Utilities.styleHollowedButton(login)
+                Utilities.styleHollowButton(login)
               
                  
              }
- t
+ 
     
     // signupButtonPressed takes you to SignUpViewController Page
     @IBAction func  signUpButtonPressed() {
